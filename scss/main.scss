@@ -1,6 +1,5 @@
-$tan:   #EAE5E5;
-$pink:  #CF4646;
-$green: #61CFD3;
+$tan:             #EAE5E5;
+$pink:            #CF4646;
 $text-color-tan:  #5D5D5D;
 
 @import "normalize/normalize";
@@ -10,4 +9,5 @@ $text-color-tan:  #5D5D5D;
 // Refills
 @import "refills/hero";
 @import "refills/bullets";
+@import "refills/work-boxes";
 

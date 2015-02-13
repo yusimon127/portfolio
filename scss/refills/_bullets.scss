@@ -19,7 +19,7 @@
     line-height: $base-line-height;
 
     a {
-      font-size: 0.9em;
+      color: $base-font-color;
     }
   }
 
@@ -36,6 +36,7 @@
   margin: 0 auto;
   padding: 0;
   overflow: auto;
+  background-color: $pink;
 
   .bullet {
     @include flex-basis(20em);
