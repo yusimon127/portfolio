@@ -1,10 +1,12 @@
 $tan:   #EAE5E5;
 $pink:  #CF4646;
 $green: #61CFD3;
-$text-color:  #5D5D5D;
+$text-color-tan:  #5D5D5D;
 
 @import "normalize/normalize";
 @import "bourbon";
 @import "neat";
+
+// Refills
 @import "refills/hero";
 
