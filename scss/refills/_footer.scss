@@ -1,0 +1,23 @@
+.footer {
+  ///////////////////////////////////////////////////////////////////////////////////
+  $base-accent-color: #477DCA !default;
+
+  //////////////////////////////////////////////////////////////////////////////////
+
+  $footer-background: desaturate(darken($base-accent-color, 20%), 30%);
+  $footer-color: white;
+
+  background: $footer-background;
+  padding: 1em $gutter;
+  width: 100%;
+
+  p {
+    color: $footer-color;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: auto;
+    max-width: 35em;
+    text-align: center;
+  }
+}
+
