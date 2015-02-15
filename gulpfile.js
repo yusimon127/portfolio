@@ -9,7 +9,7 @@ var gulp = require("gulp"),
     minifyCSS = require("gulp-minify-css");
 
 gulp.task("scripts", function() {
-  gulp.src("js/*.js")
+  gulp.src(["js/modules/*.js", "js/*.js"])
       .pipe(concat("main.min.js"))
       .pipe(uglify())
       .pipe(gulp.dest("js/min"));
