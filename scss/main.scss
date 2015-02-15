@@ -1,3 +1,5 @@
+$white:           #FFFFFF;
+$black:           #000000;
 $tan:             #EAE5E5;
 $pink:            #CF4646;
 $text-color-tan:  #5D5D5D;
@@ -6,9 +8,14 @@ $text-color-tan:  #5D5D5D;
 @import "bourbon";
 @import "neat";
 
+@import "base";
+
 // Refills
 @import "refills/hero";
 @import "refills/bullets";
 @import "refills/work-boxes";
 @import "refills/footer";
+
+// Modal
+@import "modal";
 

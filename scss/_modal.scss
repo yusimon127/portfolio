@@ -1,0 +1,59 @@
+.modal {
+  z-index: 10000;
+  width: 50%;
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  background: $white;
+  padding: 4em;
+  box-shadow: 0 0 20px $black;
+  border-radius: 10px;
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  .modal-close {
+    @include position(absolute, 1.5em 1.5em null null);
+    @include size(1.5em);
+    background: $white;
+    cursor: pointer;
+
+    &:after,
+    &:before {
+      @include position(absolute, 3px 3px 0 50%);
+      @include transform(rotate(45deg));
+      @include size(0.15em 1.5em);
+      background: $light-gray;
+      content: '';
+      display: block;
+      margin: -3px 0 0 -1px;
+    }
+
+    &:hover:after,
+    &:hover:before {
+      background: darken($light-gray, 10%);
+    }
+
+    &:before {
+      @include transform(rotate(-45deg));
+    }
+  }
+}
+
+.modal-overlay {
+  @include transition(opacity 0.25s ease);
+  @include position(fixed, 0px 0px 0px 0px);
+  background: rgba(0,0,0, 0.85);
+  opacity: 0;
+  padding-top: 0.6em;
+  text-align: left;
+  visibility: hidden;
+  z-index: 9999;
+
+  &.modal-opened {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
